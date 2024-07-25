@@ -1,0 +1,18 @@
+//2. What is OOP? List OOP concepts.
+//OOPS : 
+// oop is a Object Oriented Programming System.
+
+// There are 5 major topic:
+// 1)	Class and object
+// 2)	Inheritance
+//       (1)single level
+//       (2)multi level
+//       (3)hyrachical
+//       (4)hybrid
+// 3)	Encapsulation
+// 4)	Polymorphism
+//       (1)function overloading
+//       (2)funtion overriding
+// 5)	Abstraction
+
+

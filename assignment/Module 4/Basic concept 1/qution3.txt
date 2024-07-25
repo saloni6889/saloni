@@ -1,0 +1,19 @@
+//3. What is the difference between OOP and POP?
+
+//oop:- 1.Pop follows bottom down approach.
+//       2.it is highly secuer.
+//       3.it deal's with data.
+//       4.it takes more memory then pop.
+//       5.there is no access specifire like public,privat, protacted.
+//       6.in oop overloding is posible.
+//       7.EXAMPLE:- C++,JAVA,PYTHON etc.
+
+// pop:- 1.Pop follows top down approach.
+//       2.it is less secuer.
+//       3.it deal's with algorithm.
+//       4.it takes very less memory.
+//       5.there is no access specifire.
+//       6.in pop we can't overloding.
+//       7.EXAMPLE:- C,FORTRAN,COBOL etc.
+
+
