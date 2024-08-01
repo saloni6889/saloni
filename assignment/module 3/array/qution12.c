@@ -4,7 +4,7 @@
 main()
 {
 	char stu[5][30];
-	int i
+	int i;
 	printf("Enter 5 Student's names : \n");
 	for(i=0;i<5;i++)	//Accept names from the user.
 	{

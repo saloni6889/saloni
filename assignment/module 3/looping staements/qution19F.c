@@ -6,9 +6,6 @@ main(){
 	left=0;//starting index
 	top=size-1;//last index
 	n=1;
-	
-	
-	
 	int number[size][size];//2d array
 	
 	
