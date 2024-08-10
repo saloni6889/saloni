@@ -3,6 +3,7 @@
 //Function Overloading.
 #include<iostream>
 using namespace std;
+		//function overloading 
  add(int a, int b){
  	cout<<"Addition"<<a+b<<endl;
  }
@@ -15,8 +16,10 @@ using namespace std;
  add(float a, float b){
  	cout<<"Division"<<a/b<<endl;
  }
+ 
  main()
  {
+ 		//function call
  	add(12,45);
  	add(2,33);
  	add(12,2);

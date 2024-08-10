@@ -4,7 +4,7 @@
 using namespace std;
 class Hello{
 	public:
-		Hello()
+		Hello()	//constructor
 		{
 			cout<<"welcome to our website"<<endl;
 		}
@@ -45,14 +45,16 @@ class Hello{
 			
 			cout<<"Multiplication"<<a*b<<endl;
 		}
-		~Hello()
+		~Hello()	//destructor
 		{
 			cout<<"welcome to our website"<<endl;
 		}
 };
 main()
 {
-	class Hello obj;
+	class Hello obj; //object creation
+	
+	//call member functions
 	obj.fun1();
 	obj.fun2();
 	obj.fun3();

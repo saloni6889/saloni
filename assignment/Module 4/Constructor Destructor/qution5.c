@@ -15,6 +15,8 @@ public:
         side2 = s2;
         side3 = s3;
     }
+    
+    		//find type of triangle
     bool isEquilateral() const {
         return (side1 == side2 && side2 == side3 && side3==side 1);
     }
@@ -27,6 +29,6 @@ public:
 };
 main()
 {
-Triangle t(23,35,56);
+Triangle t(23,35,56);		//object creation
 	
 }

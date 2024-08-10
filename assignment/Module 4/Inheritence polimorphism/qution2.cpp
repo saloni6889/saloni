@@ -6,14 +6,17 @@ class shap{
 		
 	
 	public:
+			//data members
 		float width;
 		float lenght;
 		
+		//member functions
 	inputdata(float i,float w)
 	{
 	width=w;
 	lenght=i;
 	}
+	
 	getdata()
 	{
 cout<<width<<endl;
@@ -25,6 +28,7 @@ class Rectangle : public shap{
 	
 	public:
 		getdata();
+		//print area
 		area()
 		{
 			cout<<"area of Rectangle : "<<lenght*width;
@@ -33,7 +37,8 @@ class Rectangle : public shap{
 
 main()
 {
-	Rectangle obj;
+	Rectangle obj;  //object creation
+		//call member functions 
 	obj.inputdata(23,45);
 	obj.area();
 }

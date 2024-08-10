@@ -10,20 +10,22 @@ class person{
 		string country;
 		
 		public:
-			person(string n, int a, string c)
+			person(string n, int a, string c) //constructor (set values)
 		{
 			name=n;
 			age=a;
 			country=c;
 		}
+					//get method
 	    getinformation(){
 	    	cout<<"your name is"<<name<<endl;
 	    	cout<<"your age is"<<age<<endl;
 	    	cout<<"your country is"<<country<<endl;
 		}
 };
+
 main()
 {
-	person a("saloni",20,"india");
-	a.getinformation();
+	person a("saloni",20,"india");  //object creation
+	a.getinformation();	//call member function
 }

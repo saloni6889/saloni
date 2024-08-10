@@ -5,17 +5,20 @@
 using namespace std;
 class Date {
 private:
+		//data members
     int day;
     int month;
     int year;
 
 public:
-    Date(int d, int m, int y) {
+    Date(int d, int m, int y) {		//Constructor
     	day= d;
     	month=m;
     	year=y;
     }
-    int getDay() const {
+    
+    		//getter methods
+    int getDay() const {		
         return day;
     }
 
@@ -26,6 +29,8 @@ public:
     int getYear() const {
         return year;
     }
+    
+    		//check date is valid or not.
      isValidDate() const {
         if (month < 1 || month > 12) {
         cout<<"invalid month";
@@ -41,9 +46,9 @@ public:
 };
 
 main() {
-    Date date(23, 7, 2024);
+    Date date(23, 7, 2024);		//object creation
     std::cout << "Date: " << date.getDay() << "/" << date.getMonth() << "/" << date.getYear() << std::endl;
-        if (date.isValidDate()) {
+        if (date.isValidDate()) {			//call member functions for find date is valid or not
         std::cout << "This is a valid date." << std::endl;
     } else {
         std::cout << "This is not a valid date." << std::endl;

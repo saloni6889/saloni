@@ -7,13 +7,16 @@
 using namespace std;
 class students{
 	protected:
+			//data members
 		string name;
 		int roll;
 		public:
+				//set method
 		void setdata2(){
 			name="saloni\t";
 			roll=22;
 		};
+				//get method
 		void getdata(){
 			cout<<"name:"<<name<<"\n";
 			cout<<"roll:"<<roll<<"\n";
@@ -21,13 +24,16 @@ class students{
 };
 class test:public students{
 	protected:
+				//data members
 		int maths;
 		int science;
 		public:
+				//set method
 			void setdata3(){
 				maths=70;
 				science=80;
 		}
+				//get method 
 			void getdata3(){
 				cout<<"math:"<<maths<<"\n";
 				cout<<"science:"<<science<<"\n";
@@ -35,8 +41,10 @@ class test:public students{
 };
 class result:public test{
 	protected:
+			//data member
 		int total;
 		public:
+				//set method
 			void setdata1(){
 			setdata3();
 			total=maths+science;}};
@@ -44,7 +52,9 @@ class result:public test{
 main()
 {
 	cout<<"**********Your Result******************\n";
-test t;
+test t;	//object creation
+
+	//call member functions 
 t.setdata2();
 t.getdata();
 t.setdata3();

@@ -7,21 +7,25 @@
 using namespace std;
 class employee{
 	private:
+			//data member
 			string name;
 			int employeeid;
 			double salary;
 		public:
 			
-				employee(string empname, int empid)
+				employee(string empname, int empid) //constructor
 				{
 				name= empname;
 				employeeid= empid;
 				salary=0.0;
 			}
+			
+					//count salary
 			void setsalary(double basesalary, double performance)
 			{
 			salary= basesalary * perfomance;
 		}
+					//function for display data
 			void displayInfo() {
         cout << "Employee ID: " << employeeID << endl;
         cout << "Name: " << name << endl;
@@ -31,7 +35,8 @@ class employee{
 };
 main()
 {
-	employee emp("saloni", 1001);
-    emp.setSalary(3000, 1.2);
+	employee emp("saloni", 1001);		//object creation
+			//call member functions
+    emp.setSalary(3000, 1.2);		
     emp.displayInfo();
 }

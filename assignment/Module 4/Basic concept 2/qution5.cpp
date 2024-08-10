@@ -18,10 +18,11 @@ class ractangle{
 	    return 2*length*width;	
 	}
 };
+
 main()
 {
-	ractangle mycalculate(3,4);
-    cout << "Area of the circle with ractangle "<< mycalculate.calculatearea() << endl;
-    cout << "perimeter of the circle with ractangle "<< mycalculate.calculateperimeter() << endl;
+	ractangle mycalculate(3,4);  //object creation
+    cout << "Area of the circle with ractangle "<< mycalculate.calculatearea() << endl; //call member function area of rectangle
+    cout << "perimeter of the circle with ractangle "<< mycalculate.calculateperimeter() << endl; //call member function perimeter of rectangle
 }
 

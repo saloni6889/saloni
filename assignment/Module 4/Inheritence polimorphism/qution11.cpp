@@ -8,8 +8,11 @@ Circle: Pi * Area *Area */
 using namespace std;
 class AreaOf{
 	private:
+			//data member
 		double Area;
 		public:
+			
+				//function overloading
 			void area( int a){
 				cout<<"Area of circule:"<<pi*a*a<<endl<<endl;
 				cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
@@ -27,14 +30,17 @@ class AreaOf{
 main(){
 	int a;
 	cout<<"Enter the Radius:";
-	cin>>a;
-	AreaOf aa;
-	aa.area(a);
+	cin>>a;		//user input
+	AreaOf aa;	//object creation
+	aa.area(a);		//call member function
 	float l,w;
+			//user input
 	cout<<"Enter the Length for Rectangle:";
 	cin>>l;
 	cout<<"Enter the width for Rectangle:";
 	cin>>w;
+	
+				//call member functions 
 	aa.area(l,w);
 	aa.area();
 }

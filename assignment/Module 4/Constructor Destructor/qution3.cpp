@@ -6,17 +6,19 @@
 using namespace std;
 class car{
 	private:
+				//data members
 		string company;
 		string model;
 		int year;
 		
 		public:
-		car(string c,string m, int y)
+		car(string c,string m, int y)  //constructor
 		{
 			company=c;
 			model=m;
 			year=y;
 		}
+				//get methods
 		string getcompany()
 		{
 			return company;
@@ -31,8 +33,9 @@ class car{
 		}
 };
 int main() {
-    car myCar("Toyota", "Camry", 2023);
+    car myCar("Toyota", "Camry", 2023); //object creation
     cout << "Initial values of the car:" << endl;
+    			//call get methods
     cout << "Company: " << myCar.getcompany() << endl;
     cout << "Model: " << myCar.getmodel() << endl;
     cout << "Year: " << myCar.getyear() << endl;

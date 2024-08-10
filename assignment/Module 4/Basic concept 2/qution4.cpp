@@ -8,25 +8,27 @@ class circle{
 	double radius;
 	
 	public:
-		 circle(double r) {
+		 circle(double r) { 		//constructor
         radius = r;
-    }
+    } 
    void setradius (double r){
     	radius = r;
 	}
 	getradius(){
 	    return radius;
 	}
-	double calculate(){
+	double calculate(){ 			//Area of circle
 	    return 3.14*radius*radius;
 	}
-	double calculateCircumference(){
+	double calculateCircumference(){	// Circumference of circle
 	    return 2*3.14*radius;	
 	}
 };
+
 main()
 {
-	circle mycircle(3.0);
+	circle mycircle(3.0);   //object creation
+									// call member functions 
     cout << "Area of the circle with radius "<<mycircle.getradius() << " is: " << mycircle.calculate() << endl;
     cout << "Circumference of the circle with radius " << mycircle.getradius() << " is: " << mycircle.calculateCircumference() << endl;
 }

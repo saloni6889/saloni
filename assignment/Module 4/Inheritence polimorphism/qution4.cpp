@@ -3,17 +3,21 @@
 using namespace std;
 class info{
 	private:
+			//data members
 		string sch;
 		string name;
 		string std;
 		int age;
 		public:
+				//set method
 			setdata(){
 				sch="Rastra bharti school";
 				name="Saloni";
 				std="12";
 				age=20;
 			}
+				
+				//get method
 			getdata(){
 			cout<<"\t"<<sch<<"\n";
 			cout<<"******************";
@@ -25,17 +29,21 @@ class info{
 };
 class marks{
 	private:
+			//data members 
 		int math;
 		int sci;
 		int eng;
 		int total;
 		double percentange;
+		
 		public:
+				//set method 	
 		void setmarks(){
 				math=80;
 				sci=75;
 				eng=90;
 			}
+					//get method
 		void	getmarks(){
 				cout<<"SR No"<<"\t"<<"subject\t"<<"marks"<<endl;
 				cout<<1.<<"\t"<<"maths\t"<<math<<endl;
@@ -48,8 +56,10 @@ class marks{
 				cout<<"\tpercentage:"<<percentange<<endl;
 			}
 };
+
 class marksheet: public marks,public info{
        public:
+       	 //member function
        result(){
 	   setdata();
 	   getdata();
@@ -57,8 +67,9 @@ class marksheet: public marks,public info{
 	   getmarks();
     }
 };
+
 main()
 {
-	marksheet a;
-	a.result();
+	marksheet a;  //object creation 
+	a.result();	 //call member function
 }

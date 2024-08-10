@@ -7,32 +7,41 @@
 using namespace std;
 class cricketer{
 	protected:
+			//data members
 		string name;
 		int age;
 		public:
+				//setter method
 			void setdata (){
 				cout<<"enter the name:";
 				cin>>name;
 				cout<<"age is:";
 				cin>>age;
 			}
+			
+				//getter method
 			void getdata(){
 				cout<<"name is :"<<name<<endl;
 				cout<<"age is :"<<age<<endl;
 			}};
+			
+			
 			class batsman:public cricketer{
 				private:
+						//data members
 					int total_run;
 					int total_match;
 					int avg_run;
 					int best_performance;
 					public:
+							//set method
 						void setbatsmandata(){
 							cout<<"enter the total run:";
 							cin>>total_run;
 							total_match=10;
 							avg_run=total_run/ total_match;
 						}
+								//get method
 						void getbatsmandata(){
 							cout<<"*****************************"<<endl;
 							getdata();
@@ -42,9 +51,12 @@ class cricketer{
 							cout<<"best performance:"<<best_performance<<endl;
 						}
 			};
+			
 			main(){
-				batsman c;
-				c.setdata();
+				batsman c;   //object creation
+				
+						//call member functions
+				c.setdata();	
 				c.setbatsmandata();
 				c.getbatsmandata();
 			}

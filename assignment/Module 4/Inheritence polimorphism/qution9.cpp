@@ -32,12 +32,14 @@ class oneDMAtrix{
 		 }
 		
 };
+
 main(){
 	int g[]={33,22,6,4,7};
 	int h[]={45,2,11,4,8};
 oneDMAtrix a,b,c;
+		//call member function
 a.Array(g);
 b.Array(h);
-c=a+b;
+c=a+b;		//addition using operator overloading
 
 }
